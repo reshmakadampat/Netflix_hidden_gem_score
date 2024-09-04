@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Netflix</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            
+        }
+           form {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        input[type="text"],input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Collecting info to find underrated movies</h1>
+        <form  action="/read" method="post">
+ 
+            <label>Genre:</label>
+            <input type="text" name="Genre"><br><br>
+ 
+            <label>Languages:</label>
+            <input type="text" name="Languages"><br><br>
+
+            <label>Series or Movie:</label>
+            <input type="text" name="Series or Movie"><br><br>
+
+            <label>Country Availability:</label>
+            <input type="text" name="Country Availability"><br><br>
+
+            <label>Runtime:</label>
+            <input type="text" name="Runtime"><br><br>
+
+            <label>Director:</label>
+            <input type="text" name="Director"><br><br>
+
+            <label>Writer:</label>
+            <input type="text" name="Writer"><br><br>
+
+            <label>View Rating:</label>
+            <input type="text" name="View Rating"><br><br>
+
+            <label>IMDb Score:</label>
+            <input type="text" name="IMDb Score"><br><br>
+
+            <label>Rotten Tomatoes Score:</label>
+            <input type="text" name="Rotten Tomatoes Score"><br><br>
+
+            <label>Awards Nominated For:</label>
+            <input type="text" name="Awards Nominated For"><br><br>
+
+            <label>IMDb Votes:</label>
+            <input type="text" name="IMDb Votes"><br><br>
+
+            <label>Release Date:</label>
+            <input type="text" name="Release Date" placeholder="12 Dec 2008"><br><br>
+
+            <label>Netflix Release Date:</label>
+            <input type="date" name="Netflix Release Date" placeholder="2021-03-04"><br><br>
+ 
+            <input type="submit" value="Submit"><br><br>
+            The Hidden Gem Score is {{prediction_result}}
+        </form>
+    </body>
+</html>
